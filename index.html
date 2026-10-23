@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma de Nube | Velas aromáticas</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff9fc;
+      color: #514653;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f8c9df, #cceeff);
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #864d78;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 10px 0 20px;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px #eadce8;
+    }
+
+    nav a {
+      color: #864d78;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d66eaa;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #d986b8;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    .boton:hover {
+      background: #b76598;
+    }
+
+    section {
+      padding: 45px 7%;
+      text-align: center;
+    }
+
+    h2 {
+      color: #a45e91;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .presentacion {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .producto {
+      background: white;
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 4px 15px #eadce8;
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 13px;
+    }
+
+    .producto h3 {
+      color: #a45e91;
+      margin: 12px 0 5px;
+    }
+
+    .precio {
+      font-size: 20px;
+      color: #548ba7;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .beneficios {
+      background: #eaf7ff;
+    }
+
+    .beneficios p {
+      margin: 12px;
+    }
+
+    .contacto {
+      background: #fce6f1;
+    }
+
+    footer {
+      background: #8b6386;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 30px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>☁️ Aroma de Nube</h1>
+    <p>Enciende tus sentidos, ilumina tus momentos.</p>
+    <p>Velas aromáticas creadas para llenar tu espacio
+       de tranquilidad, amor y bienestar.</p>
+    <a href="#productos" class="boton">
+      Descubre nuestros productos
+    </a>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <div class="presentacion">
+      <h2>Bienvenidos a Aroma de Nube</h2>
+      <p>
+        Convierte cada espacio en un lugar especial con
+        nuestras velas aromáticas. Encuentra aromas que
+        te ayuden a disfrutar momentos de calma, decorar
+        tu hogar y sorprender a las personas que amas.
+      </p>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>¿Quiénes somos?</h2>
+    <div class="presentacion">
+      <p>
+        Aroma de Nube es un emprendimiento dedicado a las
+        velas aromáticas y decorativas. Buscamos ofrecer
+        productos bonitos, especiales y accesibles para
+        quienes desean crear ambientes acogedores.
+      </p>
+
+      <h3>Nuestra propuesta de valor</h3>
+      <p>
+        Ofrecemos velas que combinan aroma, decoración
+        y detalles especiales para regalar o disfrutar
+        en casa, con una presentación delicada y creativa.
+      </p>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestro catálogo</h2>
+    <p>Encuentra tu aroma favorito.</p>
+
+    <div class="catalogo">
+
+      <article class="producto">
+        <img
+          src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80"
+          alt="Vela aromática decorativa">
+        <h3>Vela Dulce Vainilla</h3>
+        <p>Aroma cálido y dulce para crear un ambiente acogedor.</p>
+        <p class="precio">$25.000 COP</p>
+        <a class="boton"
+           href="https://wa.me/573001234567?text=Hola%2C%20quiero%20la%20vela%20Dulce%20Vainilla">
+          Comprar
+        </a>
+      </article>
+
+      <article class="producto">
+        <img
+          src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=600&q=80"
+          alt="Vela para decorar el hogar">
+        <h3>Vela Rosa Floral</h3>
+        <p>Una opción delicada para regalar y decorar.</p>
+        <p class="precio">$28.000 COP</p>
+        <a class="boton"
+           href="https://wa.me/573001234567?text=Hola%2C%20quiero%20la%20vela%20Rosa%20Floral">
+          Comprar
+        </a>
+      </article>
+
+      <article class="producto">
+        <img
+          src="https://images.unsplash.com/photo-1603905179139-d6f9c1c7a2c4?auto=format&fit=crop&w=600&q=80"
+          alt="Vela aromática encendida">
+        <h3>Vela Lavanda Relax</h3>
+        <p>Ideal para acompañar tus momentos de descanso.</p>
+        <p class="precio">$30.000 COP</p>
+        <a class="boton"
+           href="https://wa.me/573001234567?text=Hola%2C%20quiero%20la%20vela%20Lavanda%20Relax">
+          Comprar
+        </a>
+      </article>
+
+      <article class="producto">
+        <img
+          src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?auto=format&fit=crop&w=600&q=80"
+          alt="Vela decorativa para regalar">
+        <h3>Vela Amor Especial</h3>
+        <p>Un detalle para cumpleaños y ocasiones especiales.</p>
+        <p class="precio">$32.000 COP</p>
+        <a class="boton"
+           href="https://wa.me/573001234567?text=Hola%2C%20quiero%20la%20vela%20Amor%20Especial">
+          Comprar
+        </a>
+      </article>
+
+    </div>
+    <p style="margin-top:25px">
+      Los precios son ejemplos editables. Reemplázalos
+      por los precios reales de tu catálogo.
+    </p>
+  </section>
+
+  <section id="beneficios" class="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>🌸 Aromas para diferentes gustos y espacios.</p>
+    <p>🎁 Opciones especiales para regalar.</p>
+    <p>🕯️ Diseños decorativos para tu hogar.</p>
+    <p>💗 Una marca creada para acompañar tus momentos.</p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Haz tu pedido</h2>
+    <p>¿Te gustaría conocer nuestros productos?</p>
+    <p>Escríbenos y descubre tu próxima vela favorita.</p>
+
+    <a class="boton"
+       href="https://wa.me/573001234567?text=Hola%2C%20quiero%20conocer%20el%20cat%C3%A1logo%20de%20Aroma%20de%20Nube">
+      Escríbenos por WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>☁️ Aroma de Nube</p>
+    <p>Pequeños detalles, grandes sensaciones.</p>
+    <p>© 2026 Aroma de Nube. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
